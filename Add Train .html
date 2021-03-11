@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add train</title>
+
+    <link rel="stylesheet" type="text/css" href="addCss.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="project Logo.jpg" />
+    <script>
+        function goto2() {
+            window.location.href = "Log Out.php";
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <form action="Add Train .php" method="post">
+        <div class="addT">
+            <div class="text">
+                <label for="trainName">Train Name</label><br>
+                <input type="text" id="trainName" name="trainName" placeholder="Enter train Name" required="required">
+                <label for="trainID">Train ID</label><br>
+                <input type="text" id="trainID" name="trainID" placeholder="Enter train ID" required="required">
+
+                <label for="trainType">Train Type</label><br>
+                <select id="trainTypes" style="width:200px;" name="traintype" required="required">
+                    <option value="Express">Express</option>
+                    <option value="High speed">High speed</option>
+                    <option value="Inter-city">Inter-city</option>
+                    <option value="Commuter">Commuter</option>
+                </select>
+            </div>
+
+            <br><br><br><br>
+            <div class="prices">
+                <h2>
+                    &nbsp;Number of Seats &emsp;
+                    <br> <input type="text" min="1" step="any" required="required" name="seat" style="margin-left: 15px;" />
+
+                    <br>
+                </h2>
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit">
+            </div>
+        </div>
+        <footer>
+            <button onclick="goto2()" style="margin-top: 500px; margin-left: 1000px; border: none; padding: 15px; 
+            font-size: 22px; border-radius: 30px; box-shadow:2px 2px 4px black; background-color: blueviolet; zoom:122%;">Log out</button>
+        </footer>
+    </form>
+
+</body>
+
+</html>

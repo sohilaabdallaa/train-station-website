@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Trip</title>
+    <link rel="stylesheet" type="text/css" href="addCSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="images/train.png" />
+    <script>
+        function goto2() {
+            window.location.href = "Log Out.php";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form action="AddTrip.php" method="post">
+        <div class="addT">
+            <div class="text">
+                <label for="trainID">Train ID</label><br>
+                <input type="text" name="trainID" id="trainID" placeholder="Enter train ID" style="width:200px;" required="required"><br>
+
+
+
+                <label>Source station</label><br>
+                <select name="source" id="trainSource" style="width:200px;" required="required" name="trainsource">
+                    <option value="Cairo">Cairo</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Matruh">Matruh</option>
+                    <option value="Beheira">Beheira</option>
+                    <option value="Dakahlia">Dakahlia</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Monufia">Monufia</option>
+                    <option value="Minya">Minya</option>
+                    <option value="Gharbia">Gharbia</option>
+                    <option value="Faiyum">Faiyum</option>
+                    <option value="Qena">Qena</option>
+                    <option value="Asyut">Asyut</option>
+                    <option value="Sohag">Sohag</option>
+                    <option value="Ismailia">Ismailia</option>
+                    <option value="Beni Suef">Beni Suef</option>
+                    <option value="Qalyubia">Qalyubia</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Damietta">Damietta</option>
+                    <option value="Port Said">Port Said</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="6th of October">6th of October</option>
+                    <option value="Kafr el-Sheikh">Kafr el-Sheikh</option>
+                    <option value="Sharqia">Sharqia</option>
+                    <option value="Helwan">Helwan</option>
+                    <option value="Suez">Suez</option>
+                    <option value="New Valley">New Valley</option>
+                    <option value="26">Red Sea</option>
+                    <option value="Red Sea">South Sinai</option>
+                    <option value="North Sinai">North Sinai</option>
+                </select>
+
+
+                <label for="trainDest">Destination station</label><br>
+                <select name="destination" id="trainDest" style="width:200px;" required="required">
+                    <option value="Cairo">Cairo</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Matruh">Matruh</option>
+                    <option value="Beheira">Beheira</option>
+                    <option value="Dakahlia">Dakahlia</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Monufia">Monufia</option>
+                    <option value="Minya">Minya</option>
+                    <option value="Gharbia">Gharbia</option>
+                    <option value="Faiyum">Faiyum</option>
+                    <option value="Qena">Qena</option>
+                    <option value="Asyut">Asyut</option>
+                    <option value="Sohag">Sohag</option>
+                    <option value="Ismailia">Ismailia</option>
+                    <option value="Beni Suef">Beni Suef</option>
+                    <option value="Qalyubia">Qalyubia</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Damietta">Damietta</option>
+                    <option value="Port Said">Port Said</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="6th of October">6th of October</option>
+                    <option value="Kafr el-Sheikh">Kafr el-Sheikh</option>
+                    <option value="Sharqia">Sharqia</option>
+                    <option value="Helwan">Helwan</option>
+                    <option value="Suez">Suez</option>
+                    <option value="New Valley">New Valley</option>
+                    <option value="26">Red Sea</option>
+                    <option value="Red Sea">South Sinai</option>
+                    <option value="North Sinai">North Sinai</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="price">Price</label><br><br><br>
+                <input type="text" name="price" id="trainName" placeholder="Enter Price" style="width:200px; margin-right: 20px;" required="required"><br>
+
+                <label for="avDate" id="avDate">Available Date</label>
+                <br><br>
+                <input type="date" id="avDate" required="required" name="date">
+                <label for="avDate" id="avDate">Trip time</label>
+                <br><br>
+                <input type="time" id="avDate" required="required" name="time">
+
+            </div>
+
+            <div class="submit">
+                <input type="submit" name="submitbtn" />
+            </div>
+        </div>
+        <footer>
+            <button onclick="goto2()" style="margin-top: 500px; margin-left: 1000px; border: none; padding: 15px; 
+            font-size: 22px; border-radius: 30px; box-shadow:2px 2px 4px black; background-color: blueviolet; zoom:122%;">Log out</button>
+        </footer>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="userstyle.css">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="train.png" />
+    <script>
+        function goto() {
+            window.location.href = "profile.html";
+        }
+
+        function goto2() {
+            window.location.href = "Log Out.php";
+        }
+
+        function goto3() {
+            window.location.href = "Booking.php";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our World</h1>
+        <a id="pro-btn" onclick="goto()"><button>Profile</button></a>
+        <a id="logout" onclick="goto2()"><button>Logout</button></a>
+        <a id="Booking" onclick="goto3()"><button>Booking</button></a>
+
+    </header>
+    <div id="home">
+        <form action="search.php" method="POST">
+            <h2>Book, And travel around the world</h2>
+            <div id="Form">
+
+                <input id="Source" name="Source" type="text" placeholder="Source">
+                <input id="destination" name="destination" type="text" placeholder="destination">
+                <input id="Date" name="Date" type="date" placeholder="When">
+                <button id="search-btn" name="search-btn" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

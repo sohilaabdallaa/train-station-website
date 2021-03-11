@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    background-image: url("images/The\ Daily\ Adventures\ of\ Me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.LS1 {
+    color: rgb(43, 1, 1);
+    background-color: rgb(221, 193, 100);
+    border-color: rgb(175, 139, 22);
+    border-radius: 60px;
+    font-family: 'Arial Narrow Bold';
+    font-size: xx-large;
+    width: 250px;
+    height: 60px;
+    font-weight: 900;
+    margin-left: 480px;
+    margin-top: 1px;
+}
+
+.LS2 {
+    color: rgb(43, 1, 1);
+    background-color: rgb(221, 193, 100);
+    border-color: rgb(175, 139, 22);
+    border-radius: 60px;
+    font-size: xx-large;
+    font-weight: 550;
+    font-family: 'Arial Narrow Bold';
+    width: 250px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+
+.first div {
+    display: flex;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid rgb(175, 139, 22);
+    border-right: none;
+    padding: 3px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(175, 139, 22);
+    font-size: large;
+    color: rgb(175, 139, 22);
+}
+
+.searchTerm:focus {
+    color: rgb(43, 1, 1);
+}
+
+.searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(175, 139, 22);
+    background: rgb(175, 139, 22);
+    text-align: center;
+    color: snow;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

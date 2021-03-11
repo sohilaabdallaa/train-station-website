@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title> Profile </title>
+    <link rel="stylesheet" href="profile.css">
+    <script>
+        function goto() {
+            window.location.href ="user.html";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="info-container">
+
+        <form action="update.php" method="POST" id="update">
+            <h1>Keep Updated</h1>
+            <label>New Name</label><input type="text" name="name" placeholder="Full Name">
+            <label>New Phone Number</label><input type="text" name="phone" placeholder="Phone Number">
+            <label>New Password</label><input type="password" name="npass" placeholder="Password">
+            <h2>Enter Old Password</h2>
+            <label>Old Password</label><input type="text" name="opass" placeholder="Password">
+            <button id="up-btn" name="up-btn" type="submit">Update</button>
+        </form>
+        <footer>
+            <button id="Home" onclick="goto()">Home</button>
+            <form action="Log Out.php" method="POST">
+                <button id="logout">Log Out</button>
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>

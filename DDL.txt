@@ -1,0 +1,51 @@
+CREATE TABLE Usr
+(
+  FullName VARCHAR (100) NOT NULL,
+  Email CHAR (100) NOT NULL,
+  password VARCHAR (100) NOT NULL,
+  phoneNumber INT NOT NULL,
+  Role VARCHAR (100) Default 'Customer',
+  PRIMARY KEY (Email),
+  UNIQUE (phoneNumber)
+);
+
+CREATE TABLE Train
+(
+  name VARCHAR (100) NOT NULL,
+  type VARCHAR (100) NOT NULL,
+  TrainID INT NOT NULL,
+  no_seats INT NOT NULL,
+  PRIMARY KEY (TrainID)
+);
+
+CREATE TABLE Trip
+(
+  source VARCHAR (100) NOT NULL,
+  Destination VARCHAR (100) NOT NULL,
+  TripID INT Auto_increment NOT NULL,
+  Price FLOAT NOT NULL,
+  t_date DATE DEFAULT CURRENT_DATE,
+  t_time time default CURRENT_TIME,
+  TrainID INT NOT NULL,
+  PRIMARY KEY (TripID),
+  FOREIGN KEY (TrainID) REFERENCES Train(TrainID)
+);
+
+CREATE TABLE Book
+(
+  no_seats INT NOT NULL,
+  BookID INT NOT NULL,
+  Email VARCHAR (100) NOT NULL,
+  TripID INT NOT NULL,
+  PRIMARY KEY (BookID),
+  FOREIGN KEY (Email) REFERENCES Usr(Email),
+  FOREIGN KEY (TripID) REFERENCES Trip(TripID),
+  UNIQUE (Email, TripID)
+);
+CREATE TABLE Trip_stops
+(
+  stops VARCHAR (100) NOT NULL,
+  TripID INT Auto_increment NOT NULL,
+  PRIMARY KEY (stops, TripID),
+  FOREIGN KEY (TripID) REFERENCES Trip (TripID)
+);

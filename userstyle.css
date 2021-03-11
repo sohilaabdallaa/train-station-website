@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: rgb(0, 50, 63);
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.6);
+}
+
+#user-pic {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: -80px;
+    color: snow;
+    font-family: "Montserrat", sans-serif;
+    padding-left: -80px;
+}
+
+#pro-btn {
+    margin: 10px;
+}
+
+
+/**/
+
+#home {
+    height: 86.9vh;
+    background-image: url(images/User.jpeg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin-top: 70px;
+}
+
+#Source {
+    height: 40px;
+    padding: 10px;
+    width: 200px;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-right: -30px;
+    color: gray;
+}
+
+#destination {
+    height: 40px;
+    padding: 11px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: -15px;
+    color: gray;
+}
+
+#Date {
+    height: 39px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 5px;
+    /**margin-right: -15px;**/
+    color: gray;
+}
+
+#search-btn {
+    height: 50px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#Booking {
+    margin-left: 10px;
+}
+
+#Form {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px 50px;
+    border-radius: 5px;
+}
